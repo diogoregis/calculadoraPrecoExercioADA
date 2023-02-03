@@ -1,6 +1,9 @@
 package br.com.calculadoraPreco.controllers;
 
-public class ProdutoController {
+import br.com.calculadoraPreco.models.Produto;
+import br.com.calculadoraPreco.repository.IProdutoRepository;
+
+public class ProdutoController implements IProdutoRepository {
 
     private static final ProdutoController PRODUTO_CONTROLLER = new ProdutoController();
     private ProdutoController(){}
@@ -9,6 +12,13 @@ public class ProdutoController {
     }
 
 
+    @Override
+    public Produto criarProduto(String nome, double valor) {
+        return null;
+    }
 
+    @Override
+    public void salvarProdutoBanco(Produto produto) {
 
+    }
 }
