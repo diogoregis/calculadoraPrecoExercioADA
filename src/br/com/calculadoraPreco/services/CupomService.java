@@ -1,15 +1,17 @@
-package br.com.calculadoraPreco.controllers;
+package br.com.calculadoraPreco.services;
 
 import br.com.calculadoraPreco.models.Cupom;
+import br.com.calculadoraPreco.repository.ICupomRepository;
 
-public class CupomController {
-
+public class CupomService implements ICupomRepository {
+    @Override
     public Cupom gerarCupom() {
-        return new Cupom();
+        return null;
     }
 
+    @Override
     public void salvarCupom(Cupom cupom) {
-       cupom = gerarCupom();
+
     }
 
     @Override

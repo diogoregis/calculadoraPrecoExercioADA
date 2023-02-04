@@ -1,9 +1,11 @@
 package br.com.calculadoraPreco.controllers;
 
 import br.com.calculadoraPreco.models.Produto;
-import br.com.calculadoraPreco.repository.IProdutoRepository;
 
-public class ProdutoController implements IProdutoRepository {
+
+import java.util.List;
+
+public class ProdutoController{
 
     private static final ProdutoController PRODUTO_CONTROLLER = new ProdutoController();
     private ProdutoController(){}
@@ -12,13 +14,19 @@ public class ProdutoController implements IProdutoRepository {
     }
 
 
-    @Override
     public Produto criarProduto(String nome, double valor) {
         return null;
     }
 
-    @Override
     public void salvarProdutoBanco(Produto produto) {
 
+    }
+
+    public List<Produto> retornaListaProdutos() {
+        return null;
+    }
+
+    public Produto retornaProdutoIndex(int index) {
+        return null;
     }
 }
